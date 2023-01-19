@@ -127,9 +127,9 @@ app.get("/findPost/:postId",urlParser,(req,res)=>{
         }
     });
 });
-app.use(express.static(path.join(__dirname,"./client/build")));
-app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"./client/build/index.html"));
+app.use(express.static(path.join(__dirname,'./client/build')));
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./client/build/index.html'));
 });
 app.listen(process.env.PORT,()=>{
             console.log(`Server is running at port ${process.env.PORT}`); 
