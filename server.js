@@ -11,20 +11,8 @@ app.use(cors());
 const jsonParser = bodyParser.json();
 const urlParser = bodyParser.urlencoded({extended: true});  
 mongoose.set('strictQuery',true);
-app.use(express.static(path.join(__dirname,"./client/build")));
-app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"./client/build/index.html"));
-});
-mongoose.connect(process.env.URI,(err)=>{
-    if(!err) {
-        app.listen(process.env.PORT,()=>{
-            console.log(`Server is running at port ${process.env.PORT}`); 
-        });
-    }
-    else {
-        console.log(err);
-    }
-});
+
+mongoose.connect(process.env.URI);
 const emailSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -143,3 +131,6 @@ app.use(express.static(path.join(__dirname,"./client/build")));
 app.get("*",(req,res)=>{
     res.sendFile(path.join(__dirname,"./client/build/index.html"));
 });
+app.listen(process.env.PORT,()=>{
+            console.log(`Server is running at port ${process.env.PORT}`); 
+        });
