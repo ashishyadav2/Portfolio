@@ -14,7 +14,7 @@ mongoose.set('strictQuery',true);
 mongoose.connect(process.env.URI,(err)=>{
     if(!err) {
         app.listen(process.env.PORT,()=>{
-            console.log(`Server is running at port ${PORT}`); 
+            console.log(`Server is running at port ${process.env.PORT}`); 
         });
     }
     else {
