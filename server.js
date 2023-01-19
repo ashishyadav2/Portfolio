@@ -13,6 +13,10 @@ const urlParser = bodyParser.urlencoded({extended: true});
 mongoose.set('strictQuery',true);
 mongoose.connect(process.env.URI,(err)=>{
     if(!err) {
+app.use(express.static(path.join(__dirname,"./client/build")));
+app.get("*",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./client/build/index.html"));
+});
         app.listen(process.env.PORT,()=>{
             console.log(`Server is running at port ${process.env.PORT}`); 
         });
