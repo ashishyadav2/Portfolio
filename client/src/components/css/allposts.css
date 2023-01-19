@@ -1,0 +1,42 @@
+.allPostsDiv {
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 5% 5%;
+}
+.allPostsDiv .allPostsHeading p {
+    font-family: var(--font-sub-heading);
+    font-size: var(--font-large);
+    padding: 0 0 2% 0;
+}
+main {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    align-items: flex-start;
+}
+.sideDiv {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.editDiv {
+    width: 40%;
+    padding: 0 0 0 2%;
+}
+.card {
+    cursor: pointer;
+}
+.editDiv .createPostDiv {
+    background-color: aliceblue;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+    box-shadow: var(--box-shadow);
+}
+.editDiv .createForm {
+    width: 100%;
+    box-shadow: none;
+}

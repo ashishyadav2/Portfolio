@@ -1,0 +1,163 @@
+.adminDiv {
+    width: 100%;
+    padding: 10% 5%;
+}
+.posts {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.postHeading {
+    font-size: var(--font-large);
+    font-family: var(--font-sub-heading);
+    padding: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+}
+.postHeading a {
+    font-size: var(--font-normal);
+    margin: 0 0 0 4%;
+}
+.createBtn {
+    padding: 10% 2%;
+    background-color:rgba(0, 0, 0, 0.05);
+    border: 5px dashed var(--acc2);
+    transition: 0.3s;
+    font-family: var(--font-text);
+    font-size: var(--font-large);
+    cursor: pointer;
+}
+.createBtn:hover {
+    background-color: var(--acc2);
+    border: 5px dashed var(--white);
+    color: var(--white);
+}
+.recentPosts {
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.createPostDiv {
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 5;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+    padding: 10% 0;
+    overflow: scroll;
+}
+.createForm {
+    width: 40%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-alt);
+    padding: 2% 2%;
+}
+.divHeading {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.divHeading a{
+    cursor: pointer;
+    font-size: var(--font-normal);
+}
+.emailCard {
+    width: 48%;
+    padding: 2% 2%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    margin: 0 0 3% 0;
+    transition: 0.3s;
+}
+.emailCardNew {
+    width: 48%;
+    padding: 2% 2%;
+    position: fixed;
+    top: 50%;
+    background-color: var(--white);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.3);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    transition: 0.3s;
+}
+.emailCardNew .options {
+    display: flex;
+    justify-content: flex-end;
+}
+.emailCardNew .linkA {
+    display: none;
+}
+.emailCard p,.emailCardNew p {
+    font-size: var(--font-normal);
+    font-family: var(--font-sub-heading);
+    color: rgba(0, 0, 0, 0.7);
+}
+.emailerName {
+    font-size: var(--font-medium);
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 1% 0;
+}
+.d0 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d2, .viewEmailDiv .d2 {
+    font-size: var(--font-normal);
+}
+.emailContent {
+    font-size: var(--font-normal);
+    font-family: var(--font-text);
+}
+.emailCardNew .emailContent{
+    padding: 3% 0 10% 0;
+    font-size: var(--font-normal);
+    font-family: var(--font-text);
+}
+.postHeading1{
+    padding: 5%  0 0 0;
+}
+.posts1 {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2%  0 0 0;
+}
+.linkA {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--tertiary);
+    padding: 0 5px;
+    cursor: pointer;
+}
+.linkA:hover {
+    color: var(--tertiary);
+    background-color: transparent;
+    text-decoration: underline;
+}
+.delBtn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.emailCard .options {
+    display: none;
+}
+.emailCardNew .btn {
+    margin: 0 0 0 1%;
+}

@@ -1,0 +1,27 @@
+section {
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, var(--black)),url('../images/person-banner.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35vh 0;
+}
+.heroText {
+    text-align: center;
+    width: 75vw;
+    margin-bottom: 50px;
+    font-size: var(--font-medium);
+    font-family: var(--font-sub-heading);
+    color: var(--white);
+}

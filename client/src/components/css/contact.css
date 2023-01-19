@@ -1,0 +1,85 @@
+.formElement {
+  padding: 10px 0;
+}
+.formElement p {
+  width: 80%;
+  font-size: var(--font-normal);
+  font-family: var(--font-text);
+  padding: 10px 0 5px 0;
+}
+.formElement input,
+textarea {
+  width: 100%;
+  font-size: var(--font-normal);
+  font-family: var(--font-text);
+  padding: 8px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  outline: none;
+  resize: none;
+}
+.formElement input:focus,
+textarea:focus {
+  border: 2px solid var(--tertiary);
+}
+.contactForm {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 3%;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+}
+.contactDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  background-color: var(--tertiary);
+}
+.divHeading {
+  font-size: var(--font-large);
+  font-family: var(--font-sub-heading);
+  padding: 0 0 50px 0;
+  margin: 0 auto;
+}
+.submitBtn {
+  width: 100%;
+  font-size: var(--font-normal);
+  font-family: var(--font-text);
+  background-color: var(--tertiary);
+  padding: 10px 10px;
+  color: var(--white);
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: var(--acc1);
+}
+.messageBox {
+  padding: 15px 30px;
+  background-color: var(--acc2);
+  color: var(--white);
+  position: absolute;
+  bottom: -120%;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: var(--box-shadow-alt);
+  font-size: var(--font-normal);
+  font-family: var(--font-text);
+  transition: 0.3s;
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .contactForm {
+    width: 65%;
+  }
+}
+@media (min-width: 320px) and (max-width: 700px) {
+  .contactForm {
+    width: 95%;
+  }
+}

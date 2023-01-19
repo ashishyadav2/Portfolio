@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon&family=Outfit&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #EB455F;
+    --secondary: #FCFFE7;
+    --tertiary: #5F9DF7;
+    --black: #000;
+    --white: #fff;
+    --acc1: #2B3467;
+    --acc2: #3AB0FF;
+    --font-large: 2rem;
+    --font-medium: 1.5rem;
+    --font-normal: 1rem;
+    --font-heading: Vineta BT;
+    --font-sub-heading: 'Kreon', serif;
+    --font-text: 'Outfit', sans-serif;
+    --font-special: Good Things;
+    --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    
+    --box-shadow-alt: 0px 10px 25px -10px rgba(0,0,0,0.5);
+}
+@media (min-width:320px) and (max-width:700px){
+    root {
+        --font-large: 2.1rem;
+        --font-medium: 1.6rem;
+        --font-normal: 1.1rem;
+    }
+}
