@@ -11,9 +11,9 @@ app.use(cors());
 const jsonParser = bodyParser.json();
 const urlParser = bodyParser.urlencoded({extended: true});  
 mongoose.set('strictQuery',true);
-mongoose.connect(URI,(err)=>{
+mongoose.connect(process.env.URI,(err)=>{
     if(!err) {
-        app.listen(PORT,()=>{
+        app.listen(process.env.PORT,()=>{
             console.log(`Server is running at port ${PORT}`); 
         });
     }
